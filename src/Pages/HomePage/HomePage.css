@@ -1,0 +1,84 @@
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+nav {
+    width: 50%;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav>ul>li {}
+
+.register {
+    width: 25%;
+}
+
+.hero_section {
+    display: flex;
+}
+
+.hero_section_one {
+    width: 40%;
+    padding-left: 100px;
+}
+
+.hero_section_two {
+    width: 60%;
+    padding-left: 100px;
+}
+
+.hero_section_one>p:nth-child(1) {
+    margin-top: 250px;
+    font-family: 'ClashDisplay-Bold';
+    font-size: 40px;
+}
+
+.hero_section_one>p:nth-child(2) {
+    font-family: 'ClashDisplay-Bold';
+    font-size: 40px;
+}
+
+.hero_section_one>p:nth-child(3) {
+    font-size: 15px;
+}
+
+.hero_section_one>button {
+    padding: 10px 20px;
+    margin: 30px 0;
+}
+
+.hero_section_two>p:nth-child(1) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 1.8px;
+    font-style: italic;
+    word-spacing: 3px;
+    position: relative;
+}
+
+.hero_section_two>p:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    background: url("./../../Assets/Vector4.png") no-repeat;
+    top: 40px;
+    width: 100%;
+    left: 200px;
+    height: 30px;
+}
